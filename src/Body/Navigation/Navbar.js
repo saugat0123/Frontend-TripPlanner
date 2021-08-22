@@ -61,7 +61,7 @@ window.location.href='/update'
     <nav className="navbar navbar-expand-md navbar-light ">
 
     <NavLink className="navbar-brand" to="/">
-    <img src='http://localhost:3000/images/logo.png' height="60" width="200" style={{marginLeft:"100px"}} />
+    <img src='http://localhost:3000/images/logo.svg' height="40" width="150" style={{marginLeft:"100px"}} />
       </NavLink>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

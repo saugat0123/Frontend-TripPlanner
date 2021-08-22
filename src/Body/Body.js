@@ -15,7 +15,6 @@ import admin from './admin'
 import checkOut from './checkOut'
 import Updateuser from './Updateuser'
 import Home from '../Home/Home'
-import nnav from '../nnav'
 import Order from '../Body/orderReciept'
 import Update from './Update'
 import Map from './Navigation/AMap'
@@ -37,14 +36,14 @@ class Body extends Component {
                 return (
 
 
-                        <div className="container-fluid">
+                        <div className="container-fluid" id="appbody">
                                 <Row>
 
                                         <Col>
                                         <Route path='/map' component={Map} />
                                                 <Route path='/maps/:lat/:lng' component={BMap} />
-                                               
-                                                
+
+
                                                 {/*User Routes*/}
                                                 <Route exact path="/" component={Home} />
                                                 <Route path='/register' component={Registration} />
@@ -53,11 +52,11 @@ class Body extends Component {
                                                 <Route exact path="/order" component={Order} />
                                                 <Route path="/update/:id" component={Update} />
                                                 <Route path="/cart" component={Cart} />
-                                                <Route path='/update' component={Updateuser}></Route>
-                                                <Route path='/singleProduct/:id' component={singleProduct} ></Route>
+                                                <Route path='/update' component={Updateuser}/>
+                                                <Route path='/singleProduct/:id' component={singleProduct} />
                                                 <Route path='/viewRestFood/:id' component={viewRestFood} />
-                                               
-                                               
+
+
                                                 <Route path='/tab' component={Tabs} />
                                                 {/*Admin Routes*/}
                                                <Route path='/updateFood/:id' component={UpdateFood} />
@@ -67,8 +66,8 @@ class Body extends Component {
                                                 <Route path="/addResturant" component={addResturant} />
                                                 <Route exact path="/showAllOrder" component={ShowOrder} />
                                                 <Route path='/allorder' component={AllOrder} />
-                                                <Route path='/admin' component={admin} ></Route>
-                                                <Route path='/updateRes/:id' component={updateRes} ></Route>
+                                                <Route path='/admin' component={admin} />
+                                                <Route path='/updateRes/:id' component={updateRes} />
 
 
                                         </Col>

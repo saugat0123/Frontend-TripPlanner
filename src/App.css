@@ -49,13 +49,14 @@
 
 .login,
 .image {
-  min-height: 100vh;
+  height: 40vh;
 }
 
 .bg-image {
-  background-image: url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=653&q=80');
+  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/51fc3d72702163.5bf058140cbac.gif');
   background-size: cover;
   background-position: center;
+    height: 300px;
 }
 
 
@@ -140,11 +141,11 @@ p {
   50% {
     width: 0%; }
   100% {
-    width: 80%; } } 
+    width: 80%; } }
 
 .dk-footer {
   padding: 75px 0 0;
-  background-color: #151414;
+  background-color: #000;
   position: relative;
   z-index: 2; }
   .dk-footer .contact-us {
@@ -164,7 +165,7 @@ p {
 .dk-footer-box-info {
   position: absolute;
   top: -75px;
-  background: #151414;
+  background: #000;
   padding: 40px;
   z-index: 2; }
   .dk-footer-box-info .footer-social-link h3 {
@@ -374,25 +375,25 @@ p {
       border-color: #FA6742; }
 
       /* nav */
-  
-     
-  
- 
-  
+
+
+
+
+
   /* Adding color to the Navbar on mobile */
   @media only screen and (max-width: 768px) {
     .navbar {
       background-color: #1C2331; } }
-  
+
   .view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,
   .top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}#time-counter{font-size:5rem}
-  
+
 
   /*new card*/
   #fda_app
 {
     padding-left: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
     top:20px;
     overflow-x: hidden;
 }
@@ -559,9 +560,9 @@ p {
 
 .fda_food_row div.food_tile img
 {
-  
+
       margin-right:200px;
-      
+
     border-radius: 100%;
     padding: 8px;
     background-color: rgba(6, 52, 255, 0.05);
@@ -580,7 +581,7 @@ p {
 div.food_tile.active img
 {
 
-    background-color: rgba(3, 31, 63, 0.85); 
+    background-color: rgba(3, 31, 63, 0.85);
     width: 100%;
     height:150px;
 }
@@ -597,7 +598,7 @@ div.food_tile.active img
 {
     font-size: 10px;
     color: rgba(38, 29, 86, 0.4);
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
 }
 
 #food_meta
@@ -621,7 +622,7 @@ div.food_tile.active img
 {
     font-size: 12px;
     font-weight: 500;
-    color: rgba(38, 29, 86, 0.5);   
+    color: rgba(38, 29, 86, 0.5);
 }
 
 .btn-default
@@ -969,7 +970,7 @@ label.radio input:checked+span {
   cursor: text;
   transition: -webkit-transform .2s ease-in-out;
   transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, 
+  transition: transform .2s ease-in-out,
   -webkit-transform .2s ease-in-out;
 }
 .contact-form .submit-btn {
@@ -1237,7 +1238,7 @@ label.radio input:checked+span {
 .navbar{
 
   background-color: white;
-  
+
   border:solid 1px;
   box-shadow: #1C2331;
 }
@@ -1252,7 +1253,7 @@ label.radio input:checked+span {
 
 .nav-link:hover{
   color:white;
-  
+
   background-color:#DAA520
 }
 
@@ -1662,6 +1663,14 @@ hr {
 .align-bottom {
   vertical-align: bottom!important;
 }
+
+#appbody{
+    padding:50px;
+    min-height: 50vh;
+    margin-top:0px;
+}
+
+
 
 
 

@@ -5,7 +5,7 @@ import { Redirect } from "react-router";
 import {ToastContainer,toast,Zoom,Bounce} from 'react-toastify'
 
 class Login extends Component{
-    
+
   state = {
     us : "",
     pwd : ""
@@ -13,7 +13,7 @@ class Login extends Component{
 
 
 Registration=(e)=>{
-  
+
 
     e.preventDefault();
     const newdata = {
@@ -25,7 +25,7 @@ Registration=(e)=>{
     .then((response)=>{
 
       if(response.data.success===true){
-        
+
         window.location.reload(false)
         localStorage.setItem('token',response.data.token)
         localStorage.setItem('user',response.data.data.UserType)
@@ -45,7 +45,7 @@ Registration=(e)=>{
           progress: undefined,
           });
       }
-     
+
 
 
 
@@ -59,36 +59,36 @@ Registration=(e)=>{
         return(
             <div>
               <ToastContainer autoClose={5000} />
-            
+
             <div className="container-fluid">
-              
+
             <div className="row no-gutter">
-              <div className="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+              <div className="d-none d-md-flex col-md-4 col-lg-5 bg-image"/>
               <div className="col-md-8 col-lg-6">
                 <div className="login d-flex align-items-center py-5">
                   <div className="container">
                     <div className="row">
                       <div className="col-md-9 col-lg-8 mx-auto">
-                      <h3 className="login-heading mb-4">Welcome To Food Hunter!</h3>
-                        <form>
+                      <h3 className="login-heading">Welcome To TripPlanner</h3>
+                        <form className="mt-lg-4">
                           <div className="form-label-group">
                             <input type="email" id="inputEmail" className="form-control" placeholder=" Username" value ={this.state.username}
                 onChange={(event)=>{this.setState({username : event.target.value})}} required autofocus/>
-                            <label for="inputEmail">Email address</label>
+                            {/*<label for="inputEmail">Username</label>*/}
                           </div>
-          
-                          <div className="form-label-group">
-                            <input type="password" id="inputPassword" className="form-control" value ={this.state.password} 
+
+                          <div className="form-label-group mt-lg-4">
+                            <input type="password" id="inputPassword" className="form-control" value ={this.state.password}
                 onChange={(event)=>{this.setState({password : event.target.value})}} placeholder="Password" required/>
-                            <label for="inputPassword">Password</label>
+                            {/*<label for="inputPassword">Password</label>*/}
                           </div>
-          
-                          <div className="custom-control custom-checkbox mb-3">
+
+                          <div className="custom-control custom-checkbox mt-2">
                             <input type="checkbox" className="custom-control-input" id="customCheck1"/>
                             <label className="custom-control-label" for="customCheck1">Remember password</label>
                           </div>
-                          <button className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" onClick = {this.Registration} type="submit">Sign in</button>
-                          <div className="text-center">
+                          <button className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mt-2" onClick = {this.Registration} type="submit">Sign in</button>
+                          <div className="text-center mt-1">
                             <a className="small" href="www.fb.com">Forgot password?</a></div>
                         </form>
                       </div>

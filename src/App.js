@@ -15,15 +15,15 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-  <Header></Header>
-<Body></Body>
-<Footer></Footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <Header/>
+<Body/>
+<Footer/>
 
     </div>
     </BrowserRouter>
-    
+
   );
 }
 

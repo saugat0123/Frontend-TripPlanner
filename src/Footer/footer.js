@@ -16,14 +16,9 @@ class footer extends Component
         <div className="container">
             <div className="row">
                 <div className="col-md-12 col-lg-4">
-                    <div className="dk-footer-box-info">
-                        <a href="index.html" className="footer-logo">
-                            <img src="https://www.downloadclipart.net/large/indian-food-png-hd.png" alt="footer_logo" height="200" className="img-fluid"/>
-                        </a>
-                        <p className="footer-info-text">
-                           Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
-                        </p>
-                        <div className="footer-social-link">
+                    <div className="dk-footer-box-info footer-logo">
+                            <img src="https://i.pinimg.com/originals/d9/af/b2/d9afb2f0c922f34cb6ae8ad219f53ca3.gif" alt="footer_logo" height="200" className="img-fluid"/>
+                        <div className="footer-social-link mt-2">
                             <h3>Follow us</h3>
                             <ul>
                                 <li>
@@ -53,7 +48,7 @@ class footer extends Component
                                 </li>
                             </ul>
                         </div>
-                       
+
                     </div>
                     <div className="footer-awarad">
                         <img src="images/icon/best.png" alt=""/>
@@ -71,17 +66,17 @@ class footer extends Component
                                     <h3>Kathmandu,Nepal</h3>
                                     <p>5353 Road Avenue</p>
                                 </div>
-                             
+
                             </div>
-                          
+
                         </div>
                         <div className="col-md-6">
-                            
+
                             <div className="contact-us contact-us-last">
                                 <div className="contact-icon">
                                     <i className="fa fa-volume-control-phone" aria-hidden="true"></i>
                                 </div>
-                             
+
                                 <div className="contact-info">
                                     <h3>+977-9818780177</h3>
                                     <p>Give us a call</p>
@@ -132,8 +127,6 @@ class footer extends Component
                                     <h3>Subscribe</h3>
                                     <span className="animate-border border-black"></span>
                                 </div>
-                                <p>
-                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
                                 <form action="#">
                                     <div className="form-row">
                                         <div className="col dk-footer-form">
@@ -144,26 +137,26 @@ class footer extends Component
                                         </div>
                                     </div>
                                 </form>
-                                
+
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
-                
+
             </div>
-            
+
         </div>
-        
+
 
 
         <div className="copyright">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <span>Copyright © 2019, All Right Reserved Seobin</span>
+                        <span>Copyright © 2021, All Right Reserved</span>
                     </div>
                     <div className="col-md-6">
                         <div className="copyright-menu">
@@ -183,12 +176,12 @@ class footer extends Component
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
         </div>
-       
+
         <div id="back-to-top" className="back-to-top">
             <button className="btn btn-dark" title="Back to Top" >
                 <i className="fa fa-angle-up"></i>

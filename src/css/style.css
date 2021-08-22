@@ -4,6 +4,7 @@ body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
+  padding: 100px;
 }
 
 h1,
