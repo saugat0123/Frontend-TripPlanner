@@ -169,7 +169,10 @@ class Home extends Component {
                             <section id="fda_header_bar" className="col-12">
                                 <div className="row">
                                     <div className="col-12">
-                                        <h1 style={{"color": "black", "fontFamily": "Brush Script MT"}}>Order&nbsp;Quality
+                                        <h1 style={{
+                                            "color": "black",
+                                            "fontFamily": "Brush Script MT"
+                                        }}>Order&nbsp;Quality
                                             Product</h1>
                                     </div>
                                 </div>
@@ -248,16 +251,18 @@ class Home extends Component {
                                                         <div
                                                             className="d-flex justify-content-between position-absolute w-100">
                                                             <div className="label-new">
-            <span className="text-white bg-success small d-flex align-items-center px-2 py-1">
-              <i className="fa fa-star" aria-hidden="true"></i>
-              <span className="ml-1"></span>
-            </span>
+                                                                <span
+                                                                    className="text-white bg-success small d-flex align-items-center px-2 py-1">
+                                                                  <i className="fa fa-star" aria-hidden="true"/>
+                                                                  <span className="ml-1"/>
+                                                                </span>
                                                             </div>
                                                             <div className="label-sale">
-            <span className="text-white bg-primary small d-flex align-items-center px-2 py-1">
-              <i className="fa fa-tag" aria-hidden="true"/>
-              <span className="ml-1">Sale</span>
-            </span>
+                                                                <span
+                                                                    className="text-white bg-primary small d-flex align-items-center px-2 py-1">
+                                                                  <i className="fa fa-tag" aria-hidden="true"/>
+                                                                  <span className="ml-1">Sale</span>
+                                                                </span>
                                                             </div>
                                                         </div>
                                                         <a href="#">
@@ -275,7 +280,7 @@ class Home extends Component {
                                                                        data-toggle="tooltip" data-placement="left"
                                                                        title="Compare">
                                                                         <i className="fa fa-line-chart"
-                                                                           aria-hidden="true"></i>
+                                                                           aria-hidden="true"/>
                                                                     </a>
                                                                 </div>
                                                             </div>

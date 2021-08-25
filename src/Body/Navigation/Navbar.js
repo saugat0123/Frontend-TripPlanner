@@ -82,7 +82,13 @@ window.location.href='/update'
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/viewResturant">
-              Store
+              Stores
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/viewHotel">
+              Hotels
             </NavLink>
           </li>
 
