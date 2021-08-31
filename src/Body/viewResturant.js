@@ -16,6 +16,7 @@ export default class viewResturant extends Component {
         axios.get('http://localhost:3000/getRest').then((response) => {
 
             this.setState({data: response.data.data})
+            console.log("data::::.........", response.data)
         })
     }
 

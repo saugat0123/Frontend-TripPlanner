@@ -1,10 +1,10 @@
-import {Component, state, changeHandler, fileHandler} from 'react';
+import React, {Component, state, changeHandler, fileHandler} from 'react';
 import axios from 'axios'
 
 import {Redirect} from "react-router";
 import {ToastContainer, toast, Zoom, Bounce} from 'react-toastify'
 
-class addFood extends Component {
+class addRoom extends Component {
     state = {
         id: this.props.match.params.id,
         Name: '',
@@ -33,7 +33,7 @@ class addFood extends Component {
 
 
     }
-    addFood = () => {
+    addRoom = () =>{
 
         const data = new FormData()
         data.append('Name', this.state.Name)
@@ -41,11 +41,10 @@ class addFood extends Component {
         data.append('Description', this.state.Description)
         data.append('Rating', this.state.Rating)
         data.append('Image', this.state.Image)
-        data.append('time', this.state.time)
 
-        axios.post('http://localhost:3000/add/' + this.state.id, data).then((response) => {
+        axios.post('http://localhost:3000/addRoom/' + this.state.id, data).then((response) => {
             console.log(response)
-            toast.success("Item has been added")
+            toast.success("Room has been added")
         })
     }
 
@@ -58,7 +57,7 @@ class addFood extends Component {
 
 
                 <section class="get-in-touch">
-                    <h1 class="title">Add Items</h1>
+                    <h1 class="title">Add Room</h1>
                     <form class="contact-form row">
                         <div class="form-field col-lg-6">
                             <input id="text" name="Name" className="input-text js-input" value={this.state.Name}
@@ -85,16 +84,11 @@ class addFood extends Component {
                                    type="file" required/>
                             <label className="label" for="message">Image</label>
                         </div>
-                        <div class="form-field col-lg-6">
-                            <input id="message" className="input-file js-input" name="time" value={this.state.time}
-                                   onChange={this.changeHandler} type="number" required/>
-                            <label className="label" for="message">Time</label>
-                        </div>
                         <div class="form-field col-lg-12">
                         </div>
                     </form>
 
-                    <button className="submit-btn" type="submit" onClick={this.addFood}>Submit</button>
+                    <button className="submit-btn" type="submit" onClick={this.addRoom}>Submit</button>
                 </section>
             </div>
 
@@ -105,4 +99,4 @@ class addFood extends Component {
 
 }
 
-export default addFood;
+export default addRoom;

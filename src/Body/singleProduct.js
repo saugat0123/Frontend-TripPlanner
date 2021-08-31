@@ -20,9 +20,9 @@ class singleProduct extends Component{
 
 		axios.post("http://localhost:3000/booking/"+this.state.id,this.state,this.state.config)
 		window.location.reload(false)
-		
-		
-		
+
+
+
 		}
     componentDidMount(){
 
@@ -36,14 +36,14 @@ this.setState({
     description:response.data.data.Description
 })
 
-console.log(response.data)
+console.log("response------",response.data)
  })
 
 
     }
 
     render(){
-	
+
         return(
             <div>
       <div className="content-wrapper" style={{"marginLeft": "0px", "minHeight": "400px","marginTop":"50px"}}>
@@ -63,9 +63,9 @@ console.log(response.data)
                                 <h3 style={{'fontWeight': 'Bold', 'color': 'rgb(2, 86, 116)'}}>Description</h3>
                                 <p>{this.state.description}</p>
                             </div>
-                            
+
                         </div>
-                       
+
                     </div>
                     <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLab">
                         <div class="modal-dialog" role="document">
@@ -94,7 +94,7 @@ console.log(response.data)
 
 
 
-            
+
         )
     }
 

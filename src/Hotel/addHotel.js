@@ -7,7 +7,7 @@ class addHotel extends Component {
         name: "",
         address: "",
         phone: "",
-        room: "",
+        rating: "",
         images: null,
         config: {
             headers: {'Authorization': `Bearer ${localStorage.getItem('token')}`}
@@ -36,13 +36,13 @@ class addHotel extends Component {
         data.append('name', this.state.name)
         data.append('address', this.state.address)
         data.append('phone', this.state.phone)
-        data.append('room,', this.state.room)
+        data.append('rating', this.state.rating)
         data.append('images', this.state.images)
 
         axios.post("http://localhost:3000/addHotel", data, this.state.config).then((response) => {
             console.log(response)
             toast.success("New Hotel Added")
-            window.location.reload()
+            // window.location.reload()
         })
     }
 
@@ -72,9 +72,9 @@ class addHotel extends Component {
                             <label className="label">Phone</label>
                         </div>
                         <div class="form-field col-lg-6 ">
-                            <input id="phone" className="input-text js-input" name="room" value={this.state.room}
+                            <input id="phone" className="input-text js-input" name="rating" value={this.state.rating}
                                    onChange={this.changeHandler} type="number" required/>
-                            <label className="label" for="phone">Room</label>
+                            <label className="label" for="phone">Rating</label>
                         </div>
                         <div class="form-field col-lg-12">
                             <input id="message" className="input-file js-input" name="images" value={this.state.image}
